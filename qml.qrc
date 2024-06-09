@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>SearchOption.qml</file>
+        <file>search.png</file>
+        <file>SearchResult.qml</file>
+    </qresource>
+</RCC>
