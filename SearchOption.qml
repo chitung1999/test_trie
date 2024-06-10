@@ -39,15 +39,12 @@ Item {
     ComboBox {
         id: comboBox
         width: 100
-        model: ["300", "3.000", "30.000", "300.000"]
+        model: [300, 3000, 30000, 300000]
         font.pixelSize: 20
         anchors {
             left: search_box.right
             leftMargin: 30
             verticalCenter: search_box.verticalCenter
-        }
-
-        onCurrentIndexChanged: {
         }
     }
 
@@ -61,6 +58,10 @@ Item {
             left: comboBox.right
             leftMargin: 30
             verticalCenter: comboBox.verticalCenter
+        }
+        MouseArea {
+            anchors.fill: parent
+            onClicked: CTRL.readDatabase(comboBox.currentText)
         }
     }
 

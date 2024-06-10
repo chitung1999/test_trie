@@ -36,6 +36,9 @@ Window {
             left: parent.left
             leftMargin: parent.width * 0.05
         }
+        listdata: CTRL.trieQuery
+        listtimer: CTRL.trieTime
+        label: "Trie"
     }
 
     SearchResult {

@@ -11,7 +11,7 @@ Item {
 
     Text {
         id: count
-        text: listmodel.length + " result (" + label + ")"
+        text: (listview.count) + " result (" + label + ")"
         font.pixelSize: 20
         anchors {
             horizontalCenter: parent.horizontalCenter
@@ -30,6 +30,7 @@ Item {
         }
 
         ListView {
+            id: listview
             width: parent.width * 0.9
             height: parent.height * 0.9
             clip: true
